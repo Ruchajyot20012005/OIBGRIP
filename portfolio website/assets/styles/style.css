@@ -1,0 +1,143 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Fira Sans', sans-serif;
+}
+#home{
+    height: 100vh;
+    background: url('../../assets/img/back1.jpg')no-repeat center center/cover;
+}
+#home img{
+    max-height: 125px;
+}
+#about{
+    height: 100vh;
+    background: url('../../assets/img//about.png') no-repeat center center/cover;
+}
+#about h2, #education h1, #skills h1, #hobbies h1{
+    font-size: 60px;
+}
+#education, #skills, #hobbies{
+    height: 100vh; 
+    justify-content: space-evenly;
+}
+#education .inner{
+    justify-content: space-evenly;
+}
+#school, #intermediate, #graduate, .inner1{
+    margin: 100px;
+}
+#school img, #intermediate img, #graduate img, #education img{
+    width: 100px; 
+    height: auto;
+}
+#skills{
+    background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
+}
+#lang, #framework, #software{
+    margin: 100px;
+}
+#contact{
+    height: 100vh; 
+    background-image: linear-gradient( 109.1deg,  rgba(181,73,91,1) 7.1%, rgba(225,107,140,1) 86.4% );
+}
+#education img, #hobbies img{
+    width: 70px;
+    height: auto;
+}
+#contact h2{
+    font-size: 60px;
+}
+#contact p{
+    font-size: 30px;
+}
+
+
+
+@media (min-width : 270px) and (max-width : 767px){
+    #nav ul li a{
+        font-size: 15px;
+    }
+    #home img{
+        max-height: 86px;
+    }
+    #home h3{
+        font-size: 25px;
+    }
+    #home h1{
+        font-size: 20px;
+    }
+    #about h2, #education h1, #skills h1, #hobbies h1, #contact h2{
+        font-size: 30px;
+    }
+    #about p, #education p{
+        font-size: 9px;
+    }
+    #education h4{
+        font-size: 20px;
+    }
+    #school, #intermediate, #graduate, .inner1, #lang, #framework, #software{
+        margin: 0px;
+        padding: 0px;
+    }
+    #skills ul li{
+        font-size: 15px;
+    }
+    .inner{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #contact p{
+        font-size: 12px;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 1023px){
+    #school, #intermediate, #graduate, .inner1, #lang, #framework, #software{
+        margin: 5px;
+        padding: 0px;
+    }
+    .inner{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #about h2, #education h1, #skills h1, #hobbies h1, #contact h2{
+        font-size: 40px;
+    }
+    #about p, #education p{
+        font-size: 10px;
+    }
+    #education h4{
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width : 1024px) and (max-width : 1439px){
+    #school, #intermediate, #graduate{
+        margin: 15px;
+    }
+    #about p, #education p{
+        font-size: 10px;
+    }
+}
+
+@media (min-width : 2560px){
+    #home img{
+        max-height: 200px;
+    }
+    #about p, #education p, #hobbies p{
+        font-size: 30px;
+    }
+    #about h2, #education h1, #skills h1, #hobbies h1, #contact h2{
+        font-size: 100px;
+    }
+    #school img, #intermediate img, #graduate img, #education img, #hobbies img{
+        width: 200px; 
+        height: auto;
+    }
+    #skills ul li{
+        font-size: 50px;
+    }
+}
